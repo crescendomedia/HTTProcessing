@@ -10,6 +10,12 @@ Installation
 First download [httprocessing.zip](https://github.com/downloads/runemadsen/HTTProcessing/httprocessing.zip)
 
 Unzip the files into the "code" folder of your Processing sketch
+=======
+
+Installation
+------------
+
+Simply clone this git repository into your Processing "libraries" folder, or use the download link to download the files to the same directory.
 
 Then import the library in your sketch:
     
@@ -27,3 +33,13 @@ Then you can make GET and POST requests from your code:
     post.send();
     println("Reponse Content: " + post.getContent());
     println("Reponse Content-Length Header: " + post.getHeader("Content-Length"));
+
+
+Building
+--------
+
+If you want to build the library (with javadocs, etc), run this from the git root folder:
+
+    ant
+
+That will generate the necessary JAR file into "libraries".
